@@ -3,14 +3,11 @@ from sklearn.datasets import make_blobs
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.model_selection import train_test_split
 
+
 X, y = make_blobs(n_samples=16, n_features=2, centers=2, center_box=(-2, 2))
-
 X = MinMaxScaler().fit_transform(X)
-
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=2)
-
 y_predict = np.empty(len(y_test), dtype=np.int64)
-
 lines = []
 
 
