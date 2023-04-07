@@ -2,6 +2,7 @@ import math
 import random                             	 
 import numpy as np
 
+
 n = 10000 
 
 
@@ -17,6 +18,7 @@ def mountains(n):
     high = max(h)
     h = [y - low for y in h]
     h = [y / (high - low) for y in h]
+    
     return h
 
 
@@ -28,7 +30,6 @@ steps = 5000
 
 def main(h, x):
     n = len(h)
-
     for step in range(steps):
         T = 2 * max(0, ((steps - step * 1.2) / steps)) ** 3
         x_new = random.randint(max(0, x - 1000), min(n - 1, x + 1000))
