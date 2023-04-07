@@ -2,6 +2,7 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.datasets import make_moons
 from sklearn.model_selection import train_test_split
 
+
 x, y = make_moons(
     n_samples=500,
     random_state=42,
