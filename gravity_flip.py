@@ -3,4 +3,5 @@ def flip(d, a):
         a.sort()
     elif (d == 'L'):
         a.sort(reverse = True)
+        
     return a
